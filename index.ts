@@ -14,7 +14,8 @@ import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
 import { server as wisp } from "@mercuryworkshop/wisp-js/server";
 
 const port: number = Number(process.env.PORT) || 8080;
-const host: string = process.env.HOST || "localhost";
+const host: string = process.env.HOST || "0.0.0.0";
+
 
 const build = async () => {
   if (!fs.existsSync("dist")) {
